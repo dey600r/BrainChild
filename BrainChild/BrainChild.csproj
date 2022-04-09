@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ExpressionBlendVersion>4.0.20621.0</ExpressionBlendVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9A8970D-A793-4983-B9BF-CBE42C2C491A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <DefaultClrNameSpace>BrainChild</DefaultClrNameSpace>
+    <RootNamespace>BrainChild</RootNamespace>
+    <AssemblyName>BrainChild</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>Application.ico</ApplicationIcon>
+    <Utf8Output>true</Utf8Output>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="RankingWindow.xaml.cs">
+      <DependentUpon>RankingWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="GamesWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BrainPreguntas.cs" />
+    <Compile Include="BrainRanking.cs" />
+    <Compile Include="GamesWindow.xaml.cs">
+      <DependentUpon>GamesWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="RankingWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+    <None Include="Application.ico">
+      <Visible>false</Visible>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\0.png" />
+    <Resource Include="Imagenes\1.png" />
+    <Resource Include="Imagenes\2.png" />
+    <Resource Include="Imagenes\3.png" />
+    <Resource Include="Imagenes\4.png" />
+    <Resource Include="Imagenes\5.png" />
+    <Resource Include="Imagenes\6.png" />
+    <Resource Include="Imagenes\7.png" />
+    <Resource Include="Imagenes\8.png" />
+    <Resource Include="Imagenes\9.png" />
+    <Resource Include="Imagenes\arañas.gif" />
+    <Resource Include="Imagenes\bocadillo_piensa.png" />
+    <Resource Include="Imagenes\FondoInicio.png" />
+    <Resource Include="Imagenes\historial.png" />
+    <Resource Include="Imagenes\interrogacion.png" />
+    <Resource Include="Imagenes\pizarra.png" />
+    <Resource Include="Imagenes\pizarra_ranking.png" />
+    <Resource Include="Imagenes\profesor.png" />
+    <Resource Include="Imagenes\tick_reg.png" />
+    <Resource Include="Imagenes\titulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\imagePrueba.png" />
+    <Resource Include="Imagenes\profe_ayuda1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\icono.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\bocadillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\multiplicar.png" />
+    <Resource Include="Imagenes\resta.png" />
+    <Resource Include="Imagenes\suma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\igual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BrainPreguntas.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BrainRanking.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\memoria1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\memoria2.png" />
+    <Resource Include="Imagenes\memoria3.png" />
+    <Resource Include="Imagenes\memoria4.png" />
+    <Resource Include="Imagenes\memoria5.png" />
+    <Resource Include="Imagenes\memoria6.png" />
+    <Resource Include="Imagenes\memoria7.png" />
+    <Resource Include="Imagenes\memoria8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\error_reg.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	     Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>

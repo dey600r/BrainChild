@@ -1,0 +1,171 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="BrainChild.GamesWindow"
+	x:Name="Window"
+	Title="Ventana"
+	Width="656" Height="461" ResizeMode="NoResize" Icon="/BrainChild;component/Imagenes/icono.ico" Closing="Window_Closing">
+	<Window.Background>
+		<RadialGradientBrush>
+			<GradientStop Color="#FF06F5C4" Offset="1"/>
+			<GradientStop Color="White" Offset="0.267"/>
+		</RadialGradientBrush>
+	</Window.Background>
+
+	<Grid x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="434*" />
+            <ColumnDefinition Width="200*" />
+        </Grid.ColumnDefinitions>
+        <Image Margin="87,28,96,136" Source="Imagenes/pizarra.png" Stretch="Fill" Grid.ColumnSpan="2" />
+        <Image HorizontalAlignment="Left" Margin="18,150,0,8" Source="Imagenes/profesor.png" Stretch="Fill" Width="153.25"/>
+        <Image Height="74.79" HorizontalAlignment="Left" Margin="124,113.842,0,0" x:Name="img_n11" Stretch="Fill" VerticalAlignment="Top" Width="43.152" />
+        <Image Height="74.79" HorizontalAlignment="Left" Margin="171,113.842,0,0" x:Name="img_n12" Stretch="Fill" VerticalAlignment="Top" Width="43.837" />
+        <Image Height="48.842" HorizontalAlignment="Left" Margin="227,128.342,0,0" x:Name="img_op" Stretch="Fill" VerticalAlignment="Top" Width="46.576" />
+        <Image Height="74.79" HorizontalAlignment="Left" Margin="284,113.842,0,0" x:Name="img_n21" Stretch="Fill" VerticalAlignment="Top" Width="45.891" />
+        <Image Height="74.79" Margin="334,113.842,0,0" x:Name="img_n22" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50.002" />
+        <Image Height="24.421" HorizontalAlignment="Left" Margin="388,138.263,0,0" x:Name="img_igual" Stretch="Fill" VerticalAlignment="Top" Width="34.933" />
+        <TextBox Height="52" HorizontalAlignment="Left" Margin="284,211,0,0" x:Name="txtBox_res" VerticalAlignment="Top" Width="77" Foreground="Cyan" FontWeight="Bold" TextAlignment="Center" FontSize="30" TextChanged="textBox1_TextChanged" MaxLength="2" AcceptsReturn="False" TextWrapping="Wrap" ToolTip="Number" Visibility="Collapsed" MaxLines="1" />
+        <Image Height="74.79" HorizontalAlignment="Left" Margin="426,113.842,0,0" x:Name="img_r1" Stretch="Fill" VerticalAlignment="Top" Width="43.837" Grid.ColumnSpan="2" />
+        <Image Height="74.79" HorizontalAlignment="Left" Margin="40,113.842,0,0" x:Name="img_r2" Stretch="Fill" VerticalAlignment="Top" Width="45.207" Grid.Column="1" />
+        <Image HorizontalAlignment="Right" Height="87" Source="Imagenes/profe_ayuda1.png" Stretch="Fill" VerticalAlignment="Bottom" Width="90" Margin="0,0,8,8" Grid.Column="1" />
+        <Image HorizontalAlignment="Right" Height="105" Margin="0,0,81,40" Source="Imagenes/bocadillo.png" Stretch="Fill" VerticalAlignment="Bottom" Width="165" x:Name="img_ayuda" Grid.ColumnSpan="2" />
+        <Image HorizontalAlignment="Right" Margin="0,0,17,83" Source="Imagenes/interrogacion.png" Stretch="Fill" Width="23" Height="41" VerticalAlignment="Bottom" Grid.Column="1" />
+        <Label Height="70" HorizontalAlignment="Left" Margin="418,298,0,0" x:Name="lbl_ayuda" VerticalAlignment="Top" Width="120" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF71C9FF" FontSize="15" Grid.ColumnSpan="2" />
+        <Button Height="32" HorizontalAlignment="Left" Margin="388,217,0,0" Name="btn_comprobar" VerticalAlignment="Top" Width="44" Click="btn_comprobar_Click" Visibility="Collapsed">
+        	<Button.Background>
+        		<RadialGradientBrush>
+        			<GradientStop Color="#FFF3F3F3"/>
+        			<GradientStop Color="#FFEBEBEB" Offset="0.129"/>
+        			<GradientStop Color="#FFDDDDDD" Offset="0.233"/>
+        			<GradientStop Color="#FF08E9F9" Offset="1"/>
+        		</RadialGradientBrush>
+        	</Button.Background>
+        	<Image Height="24" Source="Imagenes/tick_reg.png" Stretch="Fill" Width="36" Name="img_tick" Visibility="Collapsed" />
+        </Button>
+        <Label Content="PUNTOS:" Height="40" HorizontalAlignment="Left" Margin="108,35,0,0" Name="label1" VerticalAlignment="Top" Width="95" FontSize="20" FontWeight="Bold" Foreground="Red" Grid.Column="1" />
+        <ProgressBar Height="32" HorizontalAlignment="Left" Margin="177,366,0,0" Name="progressBar_tiempo" VerticalAlignment="Top" Width="213" Maximum="60" />
+        <Label Height="36" HorizontalAlignment="Left" Margin="136,58,0,0" Name="lbl_nombre" VerticalAlignment="Top" Width="150" Foreground="Cyan" FontSize="20" FontWeight="Bold" />
+        <Image Height="36" HorizontalAlignment="Left" Margin="100,72,0,0" Name="img_puntos1" Stretch="Fill" VerticalAlignment="Top" Width="28" Grid.Column="1" />
+        <Image Height="36" HorizontalAlignment="Left" Margin="134,72,0,0" Name="img_puntos2" Stretch="Fill" VerticalAlignment="Top" Width="27" Grid.Column="1" />
+        <Image Height="36" HorizontalAlignment="Left" Margin="167,72,0,0" Name="img_puntos3" Stretch="Fill" VerticalAlignment="Top" Width="28" Grid.Column="1" />
+        <Image HorizontalAlignment="Left" Margin="153,0,0,69" Source="Imagenes/bocadillo.png" Stretch="Fill" Width="161" RenderTransformOrigin="0.5,0.5" Height="122" VerticalAlignment="Bottom" Visibility="Collapsed" Name="img_ayuda_profe">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform ScaleY="-1" ScaleX="-1"/>
+        			<SkewTransform AngleY="0" AngleX="0"/>
+        			<RotateTransform Angle="0"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Label Height="68" HorizontalAlignment="Left" Margin="174,269,0,0" Name="lbl_profe" VerticalAlignment="Top" Width="120" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="15" FontWeight="Bold" Foreground="Gold" />
+        <Image HorizontalAlignment="Left" Height="67" Margin="8,8,0,0" Source="Imagenes/titulo.png" Stretch="Fill" VerticalAlignment="Top" Width="88.89"/>
+        <Label Height="38" HorizontalAlignment="Left" Margin="124,94,0,0" Name="lbl_pregunta" VerticalAlignment="Top" Width="429" FontWeight="Bold" FontStyle="Italic" Foreground="Lime" Grid.ColumnSpan="2" />
+        <RadioButton HorizontalAlignment="Left" Margin="167,136,0,0" Name="rbtn_resp1" Width="310" Height="21" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" Visibility="Collapsed" Foreground="Gold" IsChecked="True" Grid.ColumnSpan="2" />
+        <RadioButton Height="21" HorizontalAlignment="Left" Margin="167,156,0,0" Name="rbtn_resp2" VerticalAlignment="Top" Width="310" FontWeight="Bold" FontStyle="Italic" Visibility="Collapsed" Foreground="Gold" Grid.ColumnSpan="2" />
+        <RadioButton Height="16" HorizontalAlignment="Left" Margin="167,178,0,0" Name="rbtn_resp3" VerticalAlignment="Top" Width="310" FontWeight="Bold" FontStyle="Italic" Visibility="Collapsed" Foreground="Gold" Grid.ColumnSpan="2" />
+        <RadioButton Height="16" HorizontalAlignment="Left" Margin="167,199,0,0" Name="rbtn_resp4" VerticalAlignment="Top" Width="310" FontWeight="Bold" FontStyle="Italic" Visibility="Collapsed" Foreground="Gold" Grid.ColumnSpan="2" />
+        <Button Height="56" HorizontalAlignment="Left" Margin="181,107,0,0" Name="btn_mem1" VerticalAlignment="Top" Width="60" Visibility="Collapsed" Click="btn_mem1_Click">
+        	<Button.Background>
+        		<RadialGradientBrush>
+        			<GradientStop Color="#FFF3F3F3" Offset="0"/>
+        			<GradientStop Color="#FFEBEBEB" Offset="0.117"/>
+        			<GradientStop Color="#FFDDDDDD" Offset="0.117"/>
+        			<GradientStop Color="#FF25F708" Offset="1"/>
+        		</RadialGradientBrush>
+        	</Button.Background>
+        	<Image Height="46" x:Name="img_mem1" Stretch="Fill" Width="46" Visibility="Collapsed" />
+        </Button>
+        <Button Height="55" HorizontalAlignment="Left" Margin="182,178,0,0" Name="btn_mem2" VerticalAlignment="Top" Width="58" Visibility="Collapsed" Click="btn_mem2_Click">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.117"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.117"/>
+                    <GradientStop Color="#FF25F708" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            <Image Height="45" x:Name="img_mem2" Stretch="Fill" Width="46" Visibility="Collapsed" />
+        </Button>
+        <Button Height="55" HorizontalAlignment="Left" Margin="258,108,0,0" Name="btn_mem3" VerticalAlignment="Top" Width="58" Visibility="Collapsed" Click="btn_mem3_Click">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.117"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.117"/>
+                    <GradientStop Color="#FF25F708" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            <Image Height="46" x:Name="img_mem3" Stretch="Fill" Width="46" Visibility="Collapsed" />
+        </Button>
+        <Button Height="55" HorizontalAlignment="Left" Margin="258,178,0,0" Name="btn_mem4" VerticalAlignment="Top" Width="58" Visibility="Collapsed" Click="btn_mem4_Click">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.117"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.117"/>
+                    <GradientStop Color="#FF25F708" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            <Image Height="45" x:Name="img_mem4" Stretch="Fill" Width="45" Visibility="Collapsed" />
+        </Button>
+        <Button Height="56" HorizontalAlignment="Left" Margin="334,107,0,0" Name="btn_mem5" VerticalAlignment="Top" Width="61" Visibility="Collapsed" Click="btn_mem5_Click">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.117"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.117"/>
+                    <GradientStop Color="#FF25F708" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            <Image Height="45" x:Name="img_mem5" Stretch="Fill" Width="45" Visibility="Collapsed" />
+        </Button>
+        <Button Height="55" HorizontalAlignment="Left" Margin="334,178,0,0" Name="btn_mem6" VerticalAlignment="Top" Width="61" Visibility="Collapsed" Click="btn_mem6_Click">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.117"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.117"/>
+                    <GradientStop Color="#FF25F708" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            <Image Height="45" x:Name="img_mem6" Stretch="Fill" Width="45" Visibility="Collapsed" />
+        </Button>
+        <Button Height="55" HorizontalAlignment="Left" Margin="410,108,0,0" Name="btn_mem7" VerticalAlignment="Top" Width="61" Grid.ColumnSpan="2" Visibility="Collapsed" Click="btn_mem7_Click">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.117"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.117"/>
+                    <GradientStop Color="#FF25F708" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            <Image Height="45" x:Name="img_mem7" Stretch="Fill" Width="45" Visibility="Collapsed" />
+        </Button>
+        <Button Height="55" HorizontalAlignment="Left" Margin="410,178,0,0" Name="btn_mem8" VerticalAlignment="Top" Width="61" Grid.ColumnSpan="2" Visibility="Collapsed" Click="btn_mem8_Click">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.117"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.117"/>
+                    <GradientStop Color="#FF25F708" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            <Image Height="45" x:Name="img_mem8" Stretch="Fill" Width="45" Visibility="Collapsed" />
+        </Button>
+        <Image Margin="61,188,2.047,98" Source="Imagenes/bocadillo_piensa.png" Stretch="Fill" Grid.Column="1" RenderTransformOrigin="0.5,0.5" Name="img_bocadilloSolu" Visibility="Collapsed">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform ScaleY="1" ScaleX="-1"/>
+        			<SkewTransform AngleY="0" AngleX="0"/>
+        			<RotateTransform Angle="0"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Image Grid.Column="1" Height="45" HorizontalAlignment="Left" Margin="102,211,0,0" Name="img_memSol" Stretch="Fill" VerticalAlignment="Top" Width="53" />
+        <ProgressBar Height="21" HorizontalAlignment="Left" Margin="328,72,0,0" Name="progressBar_tiempo_mem" VerticalAlignment="Top" Width="100" Maximum="4" Visibility="Collapsed" Foreground="#FFF5E906" />
+        <Image Height="20" HorizontalAlignment="Left" Margin="0,74,0,0" Name="img_tiempo_mem" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="1" />
+        <Image Height="22" Margin="400,370,0,0" Name="img_tiempo1" Stretch="Fill" VerticalAlignment="Top" Source="/BrainChild;component/Imagenes/6.png" HorizontalAlignment="Left" Width="16" />
+        <Image Height="22" HorizontalAlignment="Left" Margin="418,370,0,0" Name="img_tiempo2" Stretch="Fill" VerticalAlignment="Top" Width="16" Source="/BrainChild;component/Imagenes/0.png" />
+    </Grid>
+</Window>

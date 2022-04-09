@@ -1,0 +1,14 @@
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\bin\Debug\BrainChild.exe
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\bin\Debug\BrainChild.pdb
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\obj\Debug\GamesWindow.baml
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\obj\Debug\MainWindow.baml
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\obj\Debug\GamesWindow.g.cs
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\obj\Debug\MainWindow.g.cs
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\obj\Debug\App.g.cs
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\obj\Debug\BrainChild_MarkupCompile.cache
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\obj\Debug\BrainChild.g.resources
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\obj\Debug\BrainChild.exe
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\obj\Debug\BrainChild.pdb
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\obj\Debug\RankingWindow.baml
+C:\Users\dey-portatil\Documents\Expression\Blend 4\Projects\BrainChild\BrainChild\obj\Debug\RankingWindow.g.cs

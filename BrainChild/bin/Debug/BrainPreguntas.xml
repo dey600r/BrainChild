@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<preguntas>
+  <preg pos="1">
+    <pregunta> Termina el refrán: Más vale pájaro en mano... </pregunta>
+    <respuesta1> Que pollo en fotografía </respuesta1>
+    <respuesta2> Que cuchara de palo </respuesta2>
+    <respuesta3> Y ríase la gente </respuesta3>
+    <solucion> Que ciento volando </solucion>
+  </preg>
+  <preg pos="2">
+    <pregunta> ¿Quién se dice que es el rey de la selva? </pregunta>
+    <respuesta1> El león </respuesta1>
+    <respuesta2> El tigre </respuesta2>
+    <respuesta3> El búfalo </respuesta3>
+    <solucion> El elefante </solucion>
+  </preg>
+  <preg pos="3">
+    <pregunta> ¿Quién es el agente 007? </pregunta>
+    <respuesta1> Supermán </respuesta1>
+    <respuesta2> El Zorro </respuesta2>
+    <respuesta3> Terminator </respuesta3>
+    <solucion> James Bond </solucion>
+  </preg>
+  <preg pos="4">
+    <pregunta> Mozart era un genio del mundo de... </pregunta>
+    <respuesta1> La televisión </respuesta1>
+    <respuesta2> La literatura </respuesta2>
+    <respuesta3> El deporte </respuesta3>
+    <solucion> La música </solucion>
+  </preg>
+  <preg pos="5">
+    <pregunta> ¿Cómo se llama la escuelta de Harry Potter? </pregunta>
+    <respuesta1> Oxford </respuesta1>
+    <respuesta2> Cambridge </respuesta2>
+    <respuesta3> West Point </respuesta3>
+    <solucion> Howards </solucion>
+  </preg>
+  <preg pos="6">
+    <pregunta> ¿Qué es una orquídea? </pregunta>
+    <respuesta1> Un pez </respuesta1>
+    <respuesta2> Un mamifero </respuesta2>
+    <respuesta3> La mujer de una orca </respuesta3>
+    <solucion> Una flor </solucion>
+  </preg>
+  <preg pos="7">
+    <pregunta> ¿Cómo se llama la esponja que vive debajo del mar? </pregunta>
+    <respuesta1> Tin tin </respuesta1>
+    <respuesta2> Chicho terremoto </respuesta2>
+    <respuesta3> Donald </respuesta3>
+    <solucion> Bob Esponja </solucion>
+  </preg>
+  <preg pos="8">
+    <pregunta> ¿Qué tipo de animal es el león? </pregunta>
+    <respuesta1> Ave </respuesta1>
+    <respuesta2> Reptíl </respuesta2>
+    <respuesta3> Acuático </respuesta3>
+    <solucion> Mamífero </solucion>
+  </preg>
+  <preg pos="9">
+    <pregunta> ¿Cuál es la capitál de España? </pregunta>
+    <respuesta1> Barcelona </respuesta1>
+    <respuesta2> Bilbao </respuesta2>
+    <respuesta3> Valencia </respuesta3>
+    <solucion> Madrid </solucion>
+  </preg>
+  <preg pos="10">
+    <pregunta> ¿Cuántos lados tiene un cuadrado? </pregunta>
+    <respuesta1> 7 lados </respuesta1>
+    <respuesta2> 2 lados </respuesta2>
+    <respuesta3> 5 lados </respuesta3>
+    <solucion> 4 lados </solucion>
+  </preg>
+  <preg pos="11">
+    <pregunta> ¿Qué pesa más 1 kilo de plumas 1 kilo de hierro o 1 kilo de algodon ? </pregunta>
+    <respuesta1> 1 kilo de plumas </respuesta1>
+    <respuesta2> 1 kilo de hierro </respuesta2>
+    <respuesta3> 1 kilo de algodón </respuesta3>
+    <solucion> Igual </solucion>
+  </preg>
+  <preg pos="12">
+    <pregunta> ¿Qué animal tene el cuerpo cubierto de escamas? </pregunta>
+    <respuesta1> La gallina </respuesta1>
+    <respuesta2> La cucaracha </respuesta2>
+    <respuesta3> El ratón </respuesta3>
+    <solucion> La sardina </solucion>
+  </preg>
+  <preg pos="13">
+    <pregunta> La ... es una animal herbívoro puesto que se alimenta de vegetales </pregunta>
+    <respuesta1> La ballena </respuesta1>
+    <respuesta2> La gaviota </respuesta2>
+    <respuesta3> La rana </respuesta3>
+    <solucion> La vaca </solucion>
+  </preg>
+  <preg pos="14">
+    <pregunta> ¿Qué animal tene el cuerpo cubierto de escamas? </pregunta>
+    <respuesta1> La gallina </respuesta1>
+    <respuesta2> La cucaracha </respuesta2>
+    <respuesta3> El ratón </respuesta3>
+    <solucion> La sardina </solucion>
+  </preg>
+  <preg pos="15">
+    <pregunta> ¿Cuántas veces al día nos tenemos que lavar los dientes? </pregunta>
+    <respuesta1> Ninguna vez </respuesta1>
+    <respuesta2> 10 veces </respuesta2>
+    <respuesta3> Cada hora </respuesta3>
+    <solucion> 3 veces </solucion>
+  </preg>
+  <preg pos="16">
+    <pregunta> ¿Qué animal tiene el cuerpo cubierto de escamas? </pregunta>
+    <respuesta1> La gallina </respuesta1>
+    <respuesta2> La cucaracha </respuesta2>
+    <respuesta3> El ratón </respuesta3>
+    <solucion> La sardina </solucion>
+  </preg>
+  <preg pos="17">
+    <pregunta> ¿Es necesario lavarse las manos antes de comer? </pregunta>
+    <respuesta1> No </respuesta1>
+    <respuesta2> Solo después de comer </respuesta2>
+    <respuesta3> Unicamente si comemos pasta </respuesta3>
+    <solucion> Si, para deshacernos de la suciedad </solucion>
+  </preg>
+  <preg pos="18">
+    <pregunta> ¿Qué cerdito se construyó una casa de ladrillos? </pregunta>
+    <respuesta1> El cerdito menor </respuesta1>
+    <respuesta2> El cerdito mediano </respuesta2>
+    <respuesta3> El lobo </respuesta3>
+    <solucion> El cerdito mayor </solucion>
+  </preg>
+  <preg pos="19">
+    <pregunta> ¿Cuantos días tiene un año? </pregunta>
+    <respuesta1> 200 días </respuesta1>
+    <respuesta2> 457 días </respuesta2>
+    <respuesta3> 99 días </respuesta3>
+    <solucion> 365 días </solucion>
+  </preg>
+  <preg pos="20">
+    <pregunta> ¿Cuál es la profesión para enseñar a los niños? </pregunta>
+    <respuesta1> Camarero </respuesta1>
+    <respuesta2> Militar </respuesta2>
+    <respuesta3> Informático </respuesta3>
+    <solucion> Profesor </solucion>
+  </preg>
+  <preg pos="21">
+    <pregunta> Redondo soy como un pandero quién me tome en verano que use sombrero </pregunta>
+    <respuesta1> Linterna </respuesta1>
+    <respuesta2> Pandero </respuesta2>
+    <respuesta3> Sombrilla </respuesta3>
+    <solucion> Sol </solucion>
+  </preg>
+  <preg pos="22">
+    <pregunta> Es pequeña como una pera, pero alumbra la casa entera </pregunta>
+    <respuesta1> Coche </respuesta1>
+    <respuesta2> Televisión </respuesta2>
+    <respuesta3> Pera </respuesta3>
+    <solucion> Bombilla </solucion>
+  </preg>
+  <preg pos="23">
+    <pregunta> ¿Cómo se dice en inglés "pájaro"? </pregunta>
+    <respuesta1> Cow </respuesta1>
+    <respuesta2> Horse </respuesta2>
+    <respuesta3> Rat </respuesta3>
+    <solucion> Bird </solucion>
+  </preg>
+  <preg pos="24">
+    <pregunta> ¿Quién fué dejando migas de pan para encontrar su casa? </pregunta>
+    <respuesta1> Peter pan </respuesta1>
+    <respuesta2> El gato con botas </respuesta2>
+    <respuesta3> Alicia </respuesta3>
+    <solucion> Pulgarcito </solucion>
+  </preg>
+  <preg pos="25">
+    <pregunta> ¿Cuál de estos personajes es un ratón? </pregunta>
+    <respuesta1> Donald </respuesta1>
+    <respuesta2> Pikachu </respuesta2>
+    <respuesta3> Goofy </respuesta3>
+    <solucion> Mickey </solucion>
+  </preg>
+</preguntas>

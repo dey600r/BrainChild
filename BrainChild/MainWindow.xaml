@@ -1,0 +1,102 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="BrainChild.MainWindow"
+	x:Name="Window"
+	Title="Inicio"
+	Width="700" Height="558" Icon="/BrainChild;component/Imagenes/icono.ico" ResizeMode="NoResize">
+	<Window.Background>
+		<RadialGradientBrush>
+			<GradientStop Color="#FFB8E974" Offset="0.758"/>
+			<GradientStop Color="#FFA0CE2C" Offset="1"/>
+		</RadialGradientBrush>
+	</Window.Background>
+
+	<Grid x:Name="LayoutRoot">
+        <Image Margin="8,123,57,8" Source="Imagenes/FondoInicio.png" Stretch="Fill"/>
+        <Image Margin="586,434,12,12" x:Name="image1" Stretch="Fill" Source="/BrainChild;component/Imagenes/profe_ayuda1.png" MouseLeave="image1_MouseLeave" MouseMove="image1_MouseMove" RenderTransformOrigin="0,0" />
+        <Image Margin="457,349,82,36" x:Name="img_info" Stretch="Fill" Source="/BrainChild;component/Imagenes/bocadillo.png" Visibility="Collapsed" />
+        <Label Content="Hola" Margin="187,290,302,178" x:Name="label1" FontSize="25" FontWeight="Bold" FontFamily="Arial Rounded MT" FontStyle="Italic" Foreground="#FF71C9FF" MouseMove="label1_MouseMove" MouseLeave="label1_MouseLeave" RenderTransformOrigin="0.5,0.5" >
+        	<Label.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform Angle="-3"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Label.RenderTransform>
+        </Label>
+        <Button Content="CÁLCULO" Margin="491,228,0,0" x:Name="btn_calculo" MouseLeave="btn_calculo_MouseLeave" MouseMove="btn_calculo_MouseMove" Foreground="DarkBlue" FontWeight="Bold" FontSize="15" Height="33" VerticalAlignment="Top" HorizontalAlignment="Left" Width="116" Click="btn_calculo_Click">
+        	<Button.Background>
+        		<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+        			<GradientStop Color="#FFF3F3F3" Offset="0.992"/>
+        			<GradientStop Color="#FFF30808" Offset="1"/>
+        			<GradientStop Color="#FFDDDDDD" Offset="0.996"/>
+        			<GradientStop Color="#FFFB1616" Offset="0.45"/>
+        		</LinearGradientBrush>
+        	</Button.Background>
+        </Button>
+        <Label Margin="472,363,98,63" x:Name="lbl_info" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="15" Foreground="#FF71C9FF" />
+        <Button Content="MEMORIA" Margin="491,268,0,0" x:Name="btn_memoria" Foreground="DarkBlue" FontSize="15" FontWeight="Bold" MouseLeave="btn_memoria_MouseLeave" MouseMove="btn_memoria_MouseMove" Height="33" VerticalAlignment="Top" HorizontalAlignment="Left" Width="116" Click="btn_memoria_Click">
+        	<Button.Background>
+        		<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+        			<GradientStop Color="#FFF3F3F3" Offset="0.996"/>
+        			<GradientStop Color="#FFEBEBEB" Offset="1"/>
+        			<GradientStop Color="#FF23F706" Offset="1"/>
+        			<GradientStop Color="#FF27DC0E" Offset="0.562"/>
+        		</LinearGradientBrush>
+        	</Button.Background>
+        </Button>
+        <Button Content="CIENCIA" Margin="491,307,0,0" x:Name="btn_ciencia" Foreground="DarkBlue" FontSize="15" FontWeight="Bold" MouseMove="btn_ciencia_MouseMove" MouseLeave="btn_ciencia_MouseLeave" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="116" Click="btn_ciencia_Click">
+        	<Button.Background>
+        		<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+        			<GradientStop Color="#FFF3F3F3" Offset="1"/>
+        			<GradientStop Color="#FFEBEBEB" Offset="0.988"/>
+        			<GradientStop Color="#FFDDDDDD" Offset="1"/>
+        			<GradientStop Color="#FF06E8F9" Offset="0.696"/>
+        		</LinearGradientBrush>
+        	</Button.Background>
+        </Button>
+        <Button Content="TODOS" Margin="492,190,0,0" x:Name="btn_todos" Foreground="DarkBlue" FontSize="15" FontWeight="Bold" MouseMove="btn_todos_MouseMove" MouseLeave="btn_todos_MouseLeave" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="115" Click="btn_todos_Click">
+        	<Button.Background>
+        		<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+        			<GradientStop Color="#FFF3F3F3" Offset="0.983"/>
+        			<GradientStop Color="#FFEBEBEB" Offset="1"/>
+        			<GradientStop Color="#FFDDDDDD" Offset="0.992"/>
+        			<GradientStop Color="#FFF9FB06" Offset="0.796"/>
+        		</LinearGradientBrush>
+        	</Button.Background>
+        </Button>
+        <Image Margin="485,135,0,0" Source="Imagenes/imagePrueba.png" Stretch="Fill" Height="41" VerticalAlignment="Top" HorizontalAlignment="Left" Width="131"/>
+        <TextBox Height="27" HorizontalAlignment="Left" Margin="506,38,0,0" x:Name="txtBox_nombre" VerticalAlignment="Top" Width="130" FontSize="15" Foreground="Cyan" FontWeight="Bold" FontStyle="Italic" TextChanged="txtBox_nombre_TextChanged" Text="" MaxLines="1" TextAlignment="Center" MaxLength="10" />
+        <Label Content="NOMBRE:" Height="27" HorizontalAlignment="Left" Margin="426,38,0,0" x:Name="label2" VerticalAlignment="Top" Width="65" Foreground="DarkBlue" />
+        <RadioButton Content="Fácil" Height="28" HorizontalAlignment="Left" Margin="506,71,0,0" x:Name="rbtn_facil" VerticalAlignment="Top" Width="71" Foreground="Cyan" FontWeight="Bold" FontStyle="Italic" FontSize="16" IsChecked="True" />
+        <RadioButton Content="Difícil" Height="26" HorizontalAlignment="Left" Margin="506,97,0,0" x:Name="rbtn_dif" VerticalAlignment="Top" Width="71" Foreground="Cyan" FontWeight="Bold" FontStyle="Italic" FontSize="16" />
+        <Label Content="DIFICULTAD:" HorizontalAlignment="Left" Margin="426,83,0,0" x:Name="label3" Width="82" Height="24" VerticalAlignment="Top" Foreground="DarkBlue" />
+        <Image Height="123" Margin="187,19,318,0" Source="Imagenes/titulo.png" Stretch="Fill" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Right" Height="48" Margin="0,0,27,87" Source="Imagenes/interrogacion.png" Stretch="Fill" VerticalAlignment="Bottom" Width="30" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform ScaleY="1" ScaleX="1"/>
+        			<SkewTransform AngleY="0" AngleX="0"/>
+        			<RotateTransform Angle="0"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Image Height="54" HorizontalAlignment="Left" Margin="237,445,0,0" x:Name="img_puntos1" Stretch="Fill" VerticalAlignment="Top" Width="44" MouseMove="img_puntos1_MouseMove" MouseLeave="img_puntos1_MouseLeave" />
+        <Image Height="54" Margin="287,445,0,0" x:Name="img_puntos2" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left" Width="43" MouseLeave="img_puntos2_MouseLeave" MouseMove="img_puntos2_MouseMove" />
+        <Image Height="54" HorizontalAlignment="Left" Margin="336,445,0,0" x:Name="img_puntos3" Stretch="Fill" VerticalAlignment="Top" Width="44" MouseMove="img_puntos3_MouseMove" MouseLeave="img_puntos3_MouseLeave" />
+        <Button Margin="0,0,241,25" Name="btn_ranking" Click="btn_ranking_Click" Height="45" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="43" >
+        	<Button.Background>
+        		<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+        			<GradientStop Color="#FFF3F3F3" Offset="1"/>
+        			<GradientStop Color="#FFDDDDDD" Offset="0.921"/>
+        			<GradientStop Color="#FFEBEBEB" Offset="1"/>
+        			<GradientStop Color="#FF0816F1" Offset="0.808"/>
+        		</LinearGradientBrush>
+        	</Button.Background>
+        	<Image Source="Imagenes/historial.png" Stretch="Fill" Width="35" Height="36" MouseLeave="Image_MouseLeave" MouseMove="Image_MouseMove" />
+        </Button>
+    </Grid>
+</Window>

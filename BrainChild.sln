@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainChild", "BrainChild\BrainChild.csproj", "{a9a8970d-a793-4983-b9bf-cbe42c2c491a}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9A8970D-A793-4983-B9BF-CBE42C2C491A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A8970D-A793-4983-B9BF-CBE42C2C491A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A8970D-A793-4983-B9BF-CBE42C2C491A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A8970D-A793-4983-B9BF-CBE42C2C491A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

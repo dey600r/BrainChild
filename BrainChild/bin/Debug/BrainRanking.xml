@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ranking>
+  <rank pos="1">
+    <nombre> BRAIN </nombre>
+    <puntos> 500 </puntos>
+  </rank>
+  <rank pos="2">
+    <nombre> BRAIN </nombre>
+    <puntos> 450 </puntos>
+  </rank>
+  <rank pos="3">
+    <nombre> BRAIN </nombre>
+    <puntos> 400 </puntos>
+  </rank>
+  <rank pos="4">
+    <nombre> BRAIN </nombre>
+    <puntos> 350 </puntos>
+  </rank>
+  <rank pos="5">
+    <nombre> BRAIN </nombre>
+    <puntos> 300 </puntos>
+  </rank>
+  <rank pos="6">
+    <nombre> BRAIN </nombre>
+    <puntos> 250 </puntos>
+  </rank>
+  <rank pos="7">
+    <nombre> BRAIN </nombre>
+    <puntos> 200 </puntos>
+  </rank>
+  <rank pos="8">
+    <nombre> BRAIN </nombre>
+    <puntos> 150 </puntos>
+  </rank>
+  <rank pos="9">
+    <nombre> BRAIN </nombre>
+    <puntos> 100 </puntos>
+  </rank>
+  <rank pos="10">
+    <nombre> BRAIN </nombre>
+    <puntos> 50 </puntos>
+  </rank>
+</ranking>
+
